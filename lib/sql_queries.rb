@@ -23,7 +23,7 @@ end
 def selects_most_prominent_color_and_returns_with_count
  "SELECT color, COUNT(DISTINCT color)
     FROM bears
-    WHERE MAX(COUNT(DISTINCT color))
+    WHERE COUNT(DISTINCT color) = 3
     "
 end
 
