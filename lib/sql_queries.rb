@@ -21,9 +21,9 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
- "SELECT color, COUNT(DISTINCT color)
+ "SELECT color, COUNT(color)
     FROM bears
-    WHERE COUNT(DISTINCT color) = 3
+    WHERE COUNT(color) = 3
     "
 end
 
