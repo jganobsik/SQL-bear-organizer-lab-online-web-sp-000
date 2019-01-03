@@ -21,7 +21,7 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
- "SELECT color, COUNT(DISTINCT color COLLATE )
+ "SELECT color, COUNT(DISTINCT color COLLATE utf8mb4_unicode_ci)
     FROM bears"
 end
 
